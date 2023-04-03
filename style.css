@@ -34,12 +34,14 @@ nav {
   }
   
   nav ul li a:hover {
-    color: #f00;
+    color: #ab01c3;
+    
   }
   
   body {
     margin: 0;
     padding-top: 50px;
+    
   }
   
 .character-selector {
@@ -72,7 +74,7 @@ nav {
   }
 
   .character img:hover {
-    border-color: black;
+    border-color: #8bc948;
   }
   
   .character p {
@@ -103,3 +105,5 @@ nav {
   .thumbnail:hover + .full-image {
     display: block;
   }
+  
+  

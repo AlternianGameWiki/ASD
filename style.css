@@ -34,7 +34,8 @@ nav {
   }
   
   nav ul li a:hover {
-    color: #f00;
+    color: #ab01c3;
+    
   }
   
   header img{
@@ -45,6 +46,7 @@ nav {
   body {
     margin: 0;
     padding-top: 50px;
+    
   }
   
 .character-selector {
@@ -77,7 +79,7 @@ nav {
   }
 
   .character img:hover {
-    border-color: black;
+    border-color: #8bc948;
   }
   
   .character p {
@@ -111,7 +113,5 @@ nav {
     transition: right 0.5s ease-out;
   }
   
-  .character:hover::before {
-    right: calc(100% - 200px);
-  }
+
   

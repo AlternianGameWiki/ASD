@@ -34,12 +34,19 @@ nav {
   }
   
   nav ul li a:hover {
-    color: #f00;
+    color: #ab01c3;
+    
   }
   
+  header img{
+    max-width: 500px;
+   margin-left: 32%;
+  }
+
   body {
     margin: 0;
     padding-top: 50px;
+    
   }
   
 .character-selector {
@@ -72,7 +79,7 @@ nav {
   }
 
   .character img:hover {
-    border-color: black;
+    border-color: #8bc948;
   }
   
   .character p {
@@ -88,18 +95,21 @@ nav {
   h1:first-of-type {
     margin-top: 3%;
   }
-
-  .image-container {
+  
+  .character {
     position: relative;
   }
   
-  .full-image {
-    display: none;
+  .character:hover::before {
+    content: "";
     position: absolute;
-    left: 0;
+    right: 100%;
     top: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url('./images/Amares-Full.png');
+    background-size: cover;
+    z-index: 999;
+    transition: right 0.5s ease-out;
   }
   
-  .thumbnail:hover + .full-image {
-    display: block;
-  }

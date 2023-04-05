@@ -49,3 +49,5 @@ characters.forEach(character => {
     character.classList.add('active');
   });
 });
+
+

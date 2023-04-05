@@ -5,3 +5,4 @@ https://github.com/MollyAP Molly Porphura
 https://github.com/KrisD2004  Kristian Dotson
 https://github.com/SelloDaGod Marcelous Kyles
 https://github.com/?????????? Johnathan Beckley
+https://trello.com/b/HCW6WNK8/alterniasmackdown

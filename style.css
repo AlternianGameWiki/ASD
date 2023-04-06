@@ -3,7 +3,8 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #242424;
+    border-bottom: #8CCA49;
     color: #fff;
     padding: 10px;
     transition: opacity 0.2s ease-in-out;
@@ -45,6 +46,8 @@ nav {
   body {
     margin: 0;
     padding-top: 50px;
+    background-image: url(./images/Background.png);
+    background-size: cover;
   }
   
 .character-selector {
@@ -66,18 +69,31 @@ nav {
     margin: 10px;
   }
 
+  .fnames{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em !important;
+    border: 4px solid #AA00C3;
+    background-color: #272727;
+    border-radius: 5%;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
   
-  .character img {
-    width: 100px;
-    height: 100px;
+  .character-icon {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    border: 4px solid red;
+    border: 4px solid #AA00C3;
+    background-color: #272727;
     border-radius: 20%;
     transition: border-color 0.3s ease-in-out;
   }
 
   .character img:hover {
-    border-color: black;
+    border-color: #8CCA49;
   }
   
   .character p {
@@ -98,20 +114,68 @@ nav {
     position: relative;
   }
   
-  .character:hover::before {
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 0;
-    width: 200px;
-    height: 200px;
-    background-image: url('./images/Amares-Full.png');
-    background-size: cover;
-    z-index: 999;
-    transition: right 0.5s ease-out;
+  .character-full {
+    position: fixed;
+    top: 50%;
+    left: -50%;
+    max-width: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, max-width 0.5s ease-in-out, left 0.5s ease-in-out;
+    transform: translateY(-50%);
   }
   
-  .character:hover::before {
-    right: calc(100% - 200px);
+  .character:hover .character-full {
+    max-width: 500px;
+    opacity: 1;
+    left: 0;
   }
   
+  .character-full img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .character-full.show {
+    display: block;
+  }
+  
+  
+  .box {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 7%;
+    background-color: #242424;
+    border: 5px solid #AA00C3;
+    border-radius: 5px;
+  }
+  
+  form {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #FFFFFF;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .button{
+    font-size: 2em !important;
+    border: 4px solid #8CCA49;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: #272727;
+    text-decoration: none;
+  }

@@ -50,7 +50,7 @@ characters.forEach(function(character) {
       characterFull.classList.remove('show');
     }
   });
-});
+}
 
 const form = document.querySelector('form');
 form.addEventListener('submit', function(event) {
@@ -197,3 +197,4 @@ form.addEventListener('submit', function(event) {
    };
   reader.readAsDataURL(photo);
 });
+=======

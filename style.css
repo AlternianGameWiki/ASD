@@ -124,6 +124,7 @@ nav {
     transform: translateY(-50%);
   }
   
+
   .character:hover .character-full {
     max-width: 500px;
     opacity: 1;
@@ -179,3 +180,5 @@ nav {
     background-color: #272727;
     text-decoration: none;
   }
+=======
+
